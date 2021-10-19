@@ -1,0 +1,381 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width-device-width intial-scale=1')
+    title mugic
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    link(rel="shortcut icon", href="images/logo.png", type="image/x-icon")
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+    link(rel='stylesheet' href='./css/style.css')
+    link(rel="stylesheet", href="./css/index.css")
+ 
+  body
+    nav.navbar.navbar-expand-sm.navbar-light.bg-light.sticky-top 
+      #navbarNav.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          form.form-inline
+            input.form-control.mr-sm-2(type='search' placeholder='Search' aria-label='Search')
+            button.btn.btn-outline-light.my-2.my-sm-0(type='submit') Search
+          li.nav-item
+            a.btn.btn-outline-light.my-2.my-sm-0(type='button' href='me') profile
+          li.nav-item
+            a.btn.btn-outline-light.my-2.my-sm-0.logout(href='logout') logout
+          //- .dropdown
+          //-   button#dropdownMenuButton.btn.btn-outline-light.dropdown-menu-sm-md-lg-xl-left.btn.btn-secondary.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+          //-     | profile
+          //-   .dropdown-menu(aria-labelledby='dropdownMenuButton')
+          //-     a.dropdown-item(href='#') Account
+          //-     a.dropdown-item(href='') profile
+          //-     a.dropdown-item.logout(href='/logout') logout
+    #mySidenav.sidenav
+      a.navbar-brand(href='#')
+        img.rounded-circle(src='images/logo.png' alt='mugicc' width='50' height='50')
+        | MUGICC
+      //- a.closebtn(href='javascript:void(0)' onclick='closeNav()')
+      //-   li.fa.fa-times(aria-hidden='true')
+      a(href='#' title='playlists') playlists
+      a(href='#' title='downloads') downloads
+        //- li.fa.fa-download(aria-hidden='true')
+      a(href='#' title='favourites') favourites
+        //- li.fa.fa-heart-o(aria-hidden='true')
+        //- li.fa.fa-user-circle-o(aria-hidden='true')
+      a(href='#' title='settings') settings
+    //- span.sidenav-toggler(style='font-size:30px;cursor:pointer;' onclick='openNav()')
+    //-   li.fa.fa-bars(aria-hidden='false')
+    //- button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarResponsive')
+    //-   span.fa.fa-bars(aria-hidden='false')
+    .row
+      .card-columns.container-fluid
+        .card.text-white.bg-light.mb-4(style='width: 20rem;')
+          .card-body
+            a.thumbnail(href='songs/Maroon 5 - Memories.mp3')
+              img.card-image-top(src='images/memories.jpg' alt='Card image cap')
+          .card-footer
+            h8.text-muted
+              | Memories 
+              //- cite  - Maroon5
+            link(rel='shortcut icon' href='favicon.ico')
+        .card.text-white.bg-light.mb-4(style='width: 20rem;')
+          .card-body
+            a.thumbnail(href='songs/Ariana Grande - 7rings.mp3')
+              img.card-image-top(src='images/7rings.jpg' alt='Card image cap')
+          .card-footer
+            h8.text-muted
+              | 7 rings 
+              //- cite  - Ariena Grande
+        .card.text-white.bg-light.mb-4(style='width: 20rem;')
+          .card-body
+            a.thumbnail(href='songs/.mp3')
+              img.card-image-top(src='images/symphonyjpg.jpg' alt='Card image cap')
+          .card-footer
+            h8.text-muted
+              | Symphony 
+              //- cite  -  Clean Bandit ft. Zara Larsson
+        .card.text-white.bg-light.mb-4(style='width: 20rem;')
+          .card-body
+            a.thumbnail(href='songs/ - Con Calma.mp3')
+              img.card-image-top(src='images/conCalma.png' alt='Card image cap')
+          .card-footer
+            h8.text-muted
+              | Con Colma 
+              //- cite  -  Daddy Yankee & Snow
+        .card.text-white.bg-light.mb-4(style='width: 20rem;')
+          .card-body
+            a.thumbnail(href='songs/Dusk Till Dawn - ZAYN ft. Sia.mp3')
+              img.card-image-top(src='images/dusk till dawn.jpg' alt='Card image cap')
+          .card-footer
+            h8.text-muted
+              | Dusk Till Dawn 
+              //- cite  -  ZAYN ft. Sia
+        .card.text-white.bg-light.mb-4(style='width: 20rem;')
+          .card-body
+            a.thumbnail(href='songs/Ellie Goulding - Love Me Like You Do.mp3')
+              img.card-image-top(src='images/Love-Me-Like-You-Do.jpg' alt='Card image cap')
+          .card-footer
+            h8.text-muted
+              | Love Me Like You Do 
+              //- cite  -  Ellie Goulding
+        .card.text-white.bg-light.mb-4(style='width: 20rem;')
+          .card-body
+            a.thumbnail(href='songs/Faded - Alan Walker.mp3')
+              img.card-image-top(src='images/faded.jpg' alt='Card image cap')
+          .card-footer
+            h8.text-muted
+              | faded 
+              //- cite  - Alan Walker
+        .card.text-white.bg-light.mb-4(style='width: 20rem;')
+          .card-body
+            a.thumbnail(href='songs/Justin Bieber - Sorry .mp3')
+              img.card-image-top(src='images/sorry.png' alt='Card image cap')
+          .card-footer
+            h8.text-muted
+              | sorry 
+              //- cite  -  Justin Bieber
+        .card.text-white.bg-light.mb-4(style='width: 20rem;')
+          .card-body
+            a.thumbnail(href='songs/Martin Garrix, Troye Sivan - There For You.mp3')
+              img.card-image-top(src='images/there for you.jpg' alt='Card image cap')
+          .card-footer
+            h8.text-muted
+              | There for you 
+              //- cite  -  Martin Garrix, Troye Sivan
+        .card.text-white.bg-light.mb-4(style='width: 20rem;')
+          .card-body
+            a.thumbnail(href='songs/Never Forget You - Zara Larsson Feat. MNEK .mp3')
+              img.card-image-top(src='images/never forget you.jpg' alt='Card image cap')
+          .card-footer
+            h8.text-muted
+              | Never forget you 
+              //- cite  -  Zara Larsson Feat. MNEK
+        .card.text-white.bg-light.mb-4(style='width: 20rem;')
+          .card-body
+            a.thumbnail(href='songs/One Direction - What Makes You Beautiful.mp3')
+              img.card-image-top(src='images/one direction.jpg' alt='Card image cap')
+          .card-footer
+            h8.text-muted
+              | What Makes You Beautiful 
+              //- cite  -  One Direction
+        .card.text-white.bg-light.mb-4(style='width: 20rem;')
+          .card-body
+            a.thumbnail(href='songs/Rackabye-Anne Marie.mp3')
+              img.card-image-top(src='images/rockabye.jpg' alt='Card image cap')
+          .card-footer
+            h8.text-muted
+              | Rackabye 
+              //- cite  -  Anne Marie
+        .card.text-white.bg-light.mb-4(style='width: 20rem;')
+          .card-body
+            a.thumbnail(href='songs/Senorita.mp3')
+              img.card-image-top(src='images/senorita.jpg' alt='Card image cap')
+          .card-footer
+            h8.text-muted
+              | senorita 
+              //- cite  -  Shawn Mendes,Camila Cabello
+        .card.text-white.bg-light.mb-4(style='width: 20rem;')
+          .card-body
+            a.thumbnail(href='songs/Sia - Cheap Thrills .mp3')
+              img.card-image-top(src='images/cheapthrills.jpg' alt='Card image cap')
+          .card-footer
+            h8.text-muted
+              | cheap Thrills 
+              //- cite  -  Sia
+        .card.text-white.bg-light.mb-4(style='width: 20rem;')
+          .card-body
+            a.thumbnail(href='songs/The Chainsmokers - Closer ft. Halsey.mp3')
+              img.card-image-top(src='images/closer.jpg' alt='Card image cap')
+          .card-footer
+            h8.text-muted
+              | Closer 
+              //- cite  -  The Chainsmokers ft. Halsey
+
+
+
+
+
+
+
+
+
+
+//- doctype html
+//- html
+//-   head
+//-     meta(charset='utf-8')
+//-     meta(name='viewport' content='width-device-width intial-scale=1')
+//-     title mugic
+//-     link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+//-     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+//-     script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js')
+//-     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+//-     link(rel='stylesheet' href='style.css')
+//-     //- script.
+//-     //-   function openNav() {
+//-     //-   document.getElementById("mySidenav").style.width = "200px";
+//-     //-   }
+//-     //-   function closeNav() {
+//-     //-   document.getElementById("mySidenav").style.width = "0";
+//-     //-   }
+//-   body
+//-     .container
+//-       .container-fluid.px-0
+//-         nav.navbar.navbar-expand-lg.navbar-dark.bg-black.py-0.px-0.navbar-dark.cusSticky
+//-           a.navbar-brand(href='#')
+//-           button.navbar-toggler.mr-3(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+//-             span.navbar-toggler-icon
+//-           #navbarNav.collapse.navbar-collapse
+//-             ul.navbar-nav
+//-               form.form-inline
+//-                 input.form-control.mr-sm-2(type='search' placeholder='Search' aria-label='Search')
+//-                 button.btn.btn-outline-light.my-2.my-sm-0(type='submit') Search
+//-               li.nav-item
+//-               .dropdown
+//-                 button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+//-                   | Dropdown button
+//-                 .dropdown-menu(aria-labelledby='dropdownMenuButton')
+//-                   a.dropdown-item(href='#') Account
+//-                   a.dropdown-item(href='#') profile
+//-                   a.dropdown-item(href='#') logout
+//-                 //- a.nav-link(href='profile' data-abc='true') profile
+//-                 //- button.btn.btn-outline-success.my-2.my-sm-0(type='button') profile 
+//-                 //- button.btn.btn-outline-light(type='button') profile
+
+//-           //- nav.navbar.navbar-expand-lg.navbar-dark.cusSticky
+//-           //-   a.navbar-brand(href='#' data-abc='true') BBBOOTSTRAP
+//-           //-   button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarColor02' aria-controls='navbarColor02' aria-expanded='false' aria-label='Toggle navigation')
+//-           //-     span.navbar-toggler-icon
+//-           //-   #navbarColor02.collapse.navbar-collapse
+//-           //-     ul.navbar-nav.mr-auto
+//-           //-       li.nav-item.active
+//-           //-         a.nav-link(href='#' data-abc='true')
+//-           //-           | Home 
+//-           //-           span.sr-only (current)
+//-           //-       li.nav-item
+//-           //-         a.nav-link(href='#' data-abc='true') contact
+//-           //-       //-   li.nav-item
+//-           //-       //-     a.nav-link(href='#' data-abc='true') Social
+//-           //-       //- form.form-inline.my-2.my-lg-0
+//-         #mySidenav.sidenav
+//-           a.navbar-brand(href='#')
+//-             img.rounded-circle(src='images/logo.png' alt='mugicc' width='50' height='50')
+//-             | MUGICC
+//-           //- a.closebtn(href='javascript:void(0)' onclick='closeNav()')
+//-           //-   li.fa.fa-times(aria-hidden='true')
+//-           a(href='#' title='playlists') playlists
+//-           a(href='#' title='downloads') downloads
+//-             //- li.fa.fa-download(aria-hidden='true')
+//-           a(href='#' title='favourites') favourites
+//-             //- li.fa.fa-heart-o(aria-hidden='true')
+//-             //- li.fa.fa-user-circle-o(aria-hidden='true')
+//-           a(href='#' title='settings') settings
+//-         //- span.sidenav-toggler(style='font-size:30px;cursor:pointer;' onclick='openNav()')
+//-         //-   li.fa.fa-bars(aria-hidden='false')
+//-         //- button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarResponsive')
+//-         //-   span.fa.fa-bars(aria-hidden='false')
+//-       .row
+//-         .card-columns.container-fluid
+//-           .card.text-white.bg-light.mb-4(style='width: 20rem;')
+//-             .card-body
+//-               a.thumbnail(href='songs/Maroon 5 - Memories.mp3')
+//-                 img.card-image-top(src='images/memories.jpg' alt='Card image cap')
+//-             .card-footer
+//-               h8.text-muted
+//-                 | Memories 
+//-                 //- cite  - Maroon5
+//-           .card.text-white.bg-light.mb-4(style='width: 20rem;')
+//-             .card-body
+//-               a.thumbnail(href='songs/Ariana Grande - 7rings.mp3')
+//-                 img.card-image-top(src='images/7rings.jpg' alt='Card image cap')
+//-             .card-footer
+//-               h8.text-muted
+//-                 | 7 rings 
+//-                 //- cite  - Ariena Grande
+//-           .card.text-white.bg-light.mb-4(style='width: 20rem;')
+//-             .card-body
+//-               a.thumbnail(href='songs/.mp3')
+//-                 img.card-image-top(src='images/symphonyjpg.jpg' alt='Card image cap')
+//-             .card-footer
+//-               h8.text-muted
+//-                 | Symphony 
+//-                 //- cite  -  Clean Bandit ft. Zara Larsson
+//-           .card.text-white.bg-light.mb-4(style='width: 20rem;')
+//-             .card-body
+//-               a.thumbnail(href='songs/ - Con Calma.mp3')
+//-                 img.card-image-top(src='images/conCalma.png' alt='Card image cap')
+//-             .card-footer
+//-               h8.text-muted
+//-                 | Con Colma 
+//-                 //- cite  -  Daddy Yankee & Snow
+//-           .card.text-white.bg-light.mb-4(style='width: 20rem;')
+//-             .card-body
+//-               a.thumbnail(href='songs/Dusk Till Dawn - ZAYN ft. Sia.mp3')
+//-                 img.card-image-top(src='images/dusk till dawn.jpg' alt='Card image cap')
+//-             .card-footer
+//-               h8.text-muted
+//-                 | Dusk Till Dawn 
+//-                 //- cite  -  ZAYN ft. Sia
+//-           .card.text-white.bg-light.mb-4(style='width: 20rem;')
+//-             .card-body
+//-               a.thumbnail(href='songs/Ellie Goulding - Love Me Like You Do.mp3')
+//-                 img.card-image-top(src='images/Love-Me-Like-You-Do.jpg' alt='Card image cap')
+//-             .card-footer
+//-               h8.text-muted
+//-                 | Love Me Like You Do 
+//-                 //- cite  -  Ellie Goulding
+//-           .card.text-white.bg-light.mb-4(style='width: 20rem;')
+//-             .card-body
+//-               a.thumbnail(href='songs/Faded - Alan Walker.mp3')
+//-                 img.card-image-top(src='images/faded.jpg' alt='Card image cap')
+//-             .card-footer
+//-               h8.text-muted
+//-                 | faded 
+//-                 //- cite  - Alan Walker
+//-           .card.text-white.bg-light.mb-4(style='width: 20rem;')
+//-             .card-body
+//-               a.thumbnail(href='songs/Justin Bieber - Sorry .mp3')
+//-                 img.card-image-top(src='images/sorry.png' alt='Card image cap')
+//-             .card-footer
+//-               h8.text-muted
+//-                 | sorry 
+//-                 //- cite  -  Justin Bieber
+//-           .card.text-white.bg-light.mb-4(style='width: 20rem;')
+//-             .card-body
+//-               a.thumbnail(href='songs/Martin Garrix, Troye Sivan - There For You.mp3')
+//-                 img.card-image-top(src='images/there for you.jpg' alt='Card image cap')
+//-             .card-footer
+//-               h8.text-muted
+//-                 | There for you 
+//-                 //- cite  -  Martin Garrix, Troye Sivan
+//-           .card.text-white.bg-light.mb-4(style='width: 20rem;')
+//-             .card-body
+//-               a.thumbnail(href='songs/Never Forget You - Zara Larsson Feat. MNEK .mp3')
+//-                 img.card-image-top(src='images/never forget you.jpg' alt='Card image cap')
+//-             .card-footer
+//-               h8.text-muted
+//-                 | Never forget you 
+//-                 //- cite  -  Zara Larsson Feat. MNEK
+//-           .card.text-white.bg-light.mb-4(style='width: 20rem;')
+//-             .card-body
+//-               a.thumbnail(href='songs/One Direction - What Makes You Beautiful.mp3')
+//-                 img.card-image-top(src='images/one direction.jpg' alt='Card image cap')
+//-             .card-footer
+//-               h8.text-muted
+//-                 | What Makes You Beautiful 
+//-                 //- cite  -  One Direction
+//-           .card.text-white.bg-light.mb-4(style='width: 20rem;')
+//-             .card-body
+//-               a.thumbnail(href='songs/Rackabye-Anne Marie.mp3')
+//-                 img.card-image-top(src='images/rockabye.jpg' alt='Card image cap')
+//-             .card-footer
+//-               h8.text-muted
+//-                 | Rackabye 
+//-                 //- cite  -  Anne Marie
+//-           .card.text-white.bg-light.mb-4(style='width: 20rem;')
+//-             .card-body
+//-               a.thumbnail(href='songs/Senorita.mp3')
+//-                 img.card-image-top(src='images/senorita.jpg' alt='Card image cap')
+//-             .card-footer
+//-               h8.text-muted
+//-                 | senorita 
+//-                 //- cite  -  Shawn Mendes,Camila Cabello
+//-           .card.text-white.bg-light.mb-4(style='width: 20rem;')
+//-             .card-body
+//-               a.thumbnail(href='songs/Sia - Cheap Thrills .mp3')
+//-                 img.card-image-top(src='images/cheapthrills.jpg' alt='Card image cap')
+//-             .card-footer
+//-               h8.text-muted
+//-                 | cheap Thrills 
+//-                 //- cite  -  Sia
+//-           .card.text-white.bg-light.mb-4(style='width: 20rem;')
+//-             .card-body
+//-               a.thumbnail(href='songs/The Chainsmokers - Closer ft. Halsey.mp3')
+//-                 img.card-image-top(src='images/closer.jpg' alt='Card image cap')
+//-             .card-footer
+//-               h8.text-muted
+//-                 | Closer 
+//-                 //- cite  -  The Chainsmokers ft. Halsey
+
+script(type= "module" src="/js/login.js")

@@ -1,0 +1,105 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link#bootstrap-css(href='//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' rel='stylesheet')
+    //- script(src='maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js')
+    //- script(src='cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    link(rel="shortcut icon", href="images/logo.png", type="image/x-icon")
+    link(rel='stylesheet', href='./css/alerts.css')
+
+    section.vh-100(style='background-color: #9A616D; color:black')
+      .container.py-5.h-100
+        .row.d-flex.justify-content-center.align-items-center.h-100
+          .col.col-xl-10
+            .card(style='border-radius: 1rem;')
+              .row.g-0
+                .col-md-6.col-lg-5.d-none.d-md-block
+                  img.img-fluid(src='https://www.socialgoat.in/PR1670/public/styles/4_col_gutter_portrait/public/2019-06/iStock-502324324.jpg' alt='login form' )
+                .col-md-6.col-lg-7.d-flex.align-items-center
+                  .card-body.p-4.p-lg-5.text-black
+                    form.form
+                      .d-flex.align-items-center.mb-3.pb-1
+                        i.fas.fa-cubes.fa-2x.me-3(style='color: #ff6219;')
+                        span.h1.fw-bold.mb-0 Sign in 
+                      h5.fw-normal.mb-3.pb-3(style='letter-spacing: 1px;') create your account
+                      .form-outline.mb-4
+                        input#username.form-control.form-control-lg(type='username', required='required', placeholder='username')
+                      .form-outline.mb-4
+                        input#emailid.form-control.form-control-lg(type='email', required='required', placeholder='emailid')
+                      .form-outline.mb-4
+                        input#password.form-control.form-control-lg(type='password', required='required', placeholder='password')
+                      .form-outline.mb-4
+                        input#passwordConfirm.form-control.form-control-lg(type='passwordConfirm', required='required', placeholder='passwordConfirm')
+                      .pt-1.mb-4
+                        button.btn.btn-primary.btn-block(type='submit') signin
+                      a.small.text-muted(href='#!') Forgot password?
+                      p.mb-5.pb-lg-2(style='color: #393f81;')
+                        | Already have an account? 
+                        a(href='#!' style='color: #393f81;') Login here
+                      a.small.text-muted(href='#!') Terms of use.
+                      a.small.text-muted(href='#!') Privacy policy
+  script(src="https:cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js")
+  script(src="/js/signup.js")
+
+
+
+
+
+
+
+
+
+
+
+
+//- doctype html
+//- html
+//-   head
+//-     meta(charset='utf-8')
+//-     meta(name='viewport', content='initial-scale=1.0')
+//-     title signup
+//-     // CSS only
+//-     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+//-     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+//-     link(rel="shortcut icon", href="images/logo.png", type="image/x-icon")
+
+//-     // JS, Popper.js, and jQuery
+//-     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+//-     script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js')
+//-     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+//-     //- //
+//-     //-   by using 'INTEGGRETY= Subresource Integrity (SRI)
+//-     //-   is a security feature that enables browsers
+//-     //-   to verify that resources they fetch (for example, from a CDN)
+//-     //-   are delivered without unexpected manipulation.
+//-     //-   It works by allowing you to provide a cryptographic hash that a fetched resource must match.'
+//-     link(rel='stylesheet', href='loginandsignup.css')
+//-   body
+//-     .d-flex-container
+//-       form.form
+//-         h2.text-center sign up
+//-         .form-group
+//-           .input-group-prepend
+//-             input#username.form-control(type='text', placeholder='username', required='required')
+//-         .form-group
+//-           .input-group-prepend
+//-             input#emailid.form-control(type='text', placeholder='emailid', required='required')
+//-         .form-group
+//-           .input-group-prepend
+//-             input#password.form-control(type='password', placeholder='Password', required='required')
+//-         .form-group
+//-           .input-group-prepend
+//-             input#passwordConfirm.form-control(type='password', placeholder='passwordConfirm', required='required')
+//-         button.btn.btn-primary.btn-block(type='submit') signup
+//-         .clearfix
+//-           label.pull-left.checkbox-inline.padding
+//-             input(type='checkbox')
+//-             | Remember me
+//-           a.pull-right(href='#') Forgot Password?
+//-         hr.light
+//-         a.account(href='home.html') create an account.
+//- script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js")
+//- script(src="/js/signup.js")
+

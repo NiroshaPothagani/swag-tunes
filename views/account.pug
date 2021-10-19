@@ -1,0 +1,70 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width-device-width intial-scale=1')
+    title mugic
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    link(rel="shortcut icon", href="images/logo.png", type="image/x-icon")
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet')
+    link(rel="stylesheet", href="./css/account.css")
+    link(rel="stylesheet", href="./css/alerts.css")
+    script(type= "module" src="/js/account.js")
+
+  body
+    .wrapper.bg-white.mt-sm-5  
+        h4.pb-4.border-bottom Account settings
+        //-WITHOUT API
+        //- form.form.user-data(action="/submit-user-data" method='POST') 
+
+        //-WITH API
+        form.form.form-user-data 
+        
+            .d-flex.align-items-start.py-3.border-bottom
+                img.img(src='https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' alt='')
+                #img-section.pl-md-4.pl-2
+                //- b Profile Photo
+                //- p Accepted file type .png. Less than 1MB
+                button.btn.button.border  
+                    b Upload new photo
+            .py-2
+                .row.py-2
+                .col-md-6
+                    label(for='username') Name
+                    input#username.bg-light.form-control(type='text', value=`${userData.username }`, required)
+                .row.py-2
+                .col-md-6
+                    label(for='emailid') Email Address
+                    input#emailid.bg-light.form-control(type='email', value=`${userData.emailid}`, required )
+                .col-md-6.pt-md-0.pt-3
+                    label(for='phone') Phone Number
+                    input.bg-light.form-control(type='tel' placeholder='+1 213-548-6015')
+                .row.py-2
+                .col-md-6
+                    label(for='country') Country
+                    select#country.bg-light(name='country')
+                        option(value='india' selected='') India
+                        option(value='usa') USA
+                        option(value='uk') UK
+                        option(value='uae') UAE
+                #lang.col-md-6.pt-md-0.pt-3
+                    label(for='language') Language
+                    .arrow
+                    select#language.bg-light(name='language')
+                        option(value='english' selected='') English
+                        option(value='english_us') English (United States)
+                        option(value='enguk') English UK
+                        option(value='arab') Arabic
+                .py-3.pb-4.border-bottom
+                button.btn.btn-primary.mr-3 Save Changes
+                button.btn.border.button Cancel
+                #deactivate.d-sm-flex.align-items-center.pt-3
+                div
+                    b Deactivate your account
+                    p Details about your company account and password
+                .ml-auto
+                    button.btn.danger Deactivate

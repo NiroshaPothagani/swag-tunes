@@ -1,0 +1,150 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='intial-scale-1')
+    title home | #{title}
+    //- // CSS only
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel="shortcut icon", href="images/logo.png", type="image/x-icon")
+    //- // JS, Popper.js, and jQuery
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+    //- //
+    //-   by using 'INTEGGRETY= Subresource Integrity (SRI)
+    //-   is a security feature that enables browsers
+    //-   to verify that resources they fetch (for example, from a CDN)
+    //-   are delivered without unexpected manipulation.
+    //-   It works by allowing you to provide a cryptographic hash that a fetched resource must match.'
+    link(rel='stylesheet', href='./css/style.css')
+  body
+    // NAVGATION BAR
+    nav.navbar.navbar-expand-md.navbar-light.bg-light.sticky-top
+      .container
+        a.navbar-brand(href='#')
+          img.rounded-circle(src='images/logo.png', alt='mugicc', width='50', height='50')
+          | MUGICC
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive')
+          span.navbar-toggle-icon
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item.active
+              a.nav-link(href='/', title='home') HOME
+            li.nav-item
+              a.nav-link(href='about', title='about') About 
+            li.nav-item
+              a.nav-link(href='services', title='Services') Services
+            li.nav-item
+              a.nav-link(href='contact', title='Contact') Contact
+      
+    // SLIDING BAR
+    #slides.carousel.slide(data-ride='carousel')
+      ul.carousel-indicators
+        li.active(data-target='#slides', data-slide-to='0')
+        li(data-target='#slides', data-slide-to='1')
+        li(data-target='#slides', data-slide-to='2')
+        li(data-target='#slides', data-slide-to='3')
+        li(data-target='#slides', data-slide-to='4')
+      .carousel-inner
+        .carousel-item.active
+          img(src='images/1.jpg')
+          .carousel-caption
+            h1.display-1 Music
+            h2 “Where words leave off, music begins .” –
+            h3 Heinrich Heine
+            br
+            a.button.btn.btn-outline-light.align-self-center.btn-lg(type='button' href='signup') Sign up 
+            a.button.btn.btn-primary.align-self-center.btn-lg(type='button' href='login') Login
+        .carousel-item
+          img(src='images/2.jpg')
+          .carousel-caption
+            h2 “I don’t sing because I’m happy; I’m happy because I sing.” – 
+            h3 William James
+            br
+            a.button.btn.btn-outline-light.align-self-center.btn-lg(type='button' href='signup') Sign up 
+            a.button.btn.btn-primary.align-self-center.btn-lg(type='button' href='login') Login
+        .carousel-item
+          img(src='images/3.jpg')
+          .carousel-caption
+            h2 “Music is the moonlight in the gloomy night of life.” – 
+            h3 Jean Paul Friedrich Richter
+            br
+            a.button.btn.btn-outline-light.align-self-center.btn-lg(type='button' href='signup') Sign up 
+            a.button.btn.btn-primary.align-self-center.btn-lg(type='button' href='login') Login
+        .carousel-item
+          img(src='images/4.jpg')
+          .carousel-caption
+            h2 “Everything in the universe has a rhythm, everything dances.” –
+            h3 Maya Angelou
+            br
+            a.button.btn.btn-outline-light.align-self-center.btn-lg(type='button' href='signup') Sign up 
+            a.button.btn.btn-primary.align-self-center.btn-lg(type='button' href='login') Login
+        .carousel-item
+          img(src='images/5.jpg')
+          .carousel-caption
+            h2
+              | “Music Drives you,
+              br
+              |  It wakes you up,
+              br
+              | It gets you pumping,
+              br
+              | and,end of the day,
+              br
+              | the correct tune 
+              br
+              | will chill you down.” –
+            h3 Dimebag Darrell
+            br
+            a.button.btn.btn-outline-light.align-self-center.btn-lg(type='button' href='signup') Sign up 
+            a.button.btn.btn-primary.align-self-center.btn-lg(type='button' href='login') Login
+        //- //
+          <a href="#slides" class="fad fa-angle-left" data-link="prev">
+          <i class="fad fa-angle-left"></i>            </a>
+          <a href="#slides" class="carousel-control" data-link="next">
+          <i class="fad fa-angle-left"></i>            </a>
+      hr.my-4
+    // CONNECT section
+    .container.padding
+      .row.text-center.padding
+        .col-12
+          h2 Connect With Us Through
+          hr.light
+        .col-12.social.padding
+          a(href='https://www.facebook.com')
+            li.fa.fa-facebook
+          a(href='https://www.instagram.com')
+            li.fa.fa-instagram
+          a(href='https://www.twitter.com')
+            li.fa.fa-twitter
+          a(href='https://www.youtube.com')
+            li.fa.fa-youtube
+      hr.my-4
+    // FOOTER
+    footer
+      .container.padding
+        .row.text-center.padding
+          .col-md-4
+            img.rounded-circle(src='images/logo.png', alt='mugicc', width='150', height='150')
+            | MUGICC
+          .col-md-4
+            hr.light
+            //- // it gives a light line
+            p Owner: 
+            p 984-434-765-7655
+            a(href="niroshapothagani@gmail.com") niroshapothagani@gmail.com 
+            p Nirosha Pothagani
+          .col-md-4
+            p Copyrights: 
+            hr.light
+            a(href="niroshapothagani@gmail.com") niroshapothagani@gmail.com 
+            br
+            a(href="©developerteam.com") ©developerteam.com 
+            br
+            a(href="©productionteam.com") ©productionteam.com
+          .col-md-12
+            hr.light
+            a(href='about')
+              h5 ©https//:mugicc.com

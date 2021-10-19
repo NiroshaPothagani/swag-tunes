@@ -1,0 +1,28 @@
+.row {
+margin-left: 300px;
+}
+.bg-black {
+background-color: #000;
+}
+.navbar-brand {
+padding: 11px 20px;
+}
+/* .active {
+background-color: #fff;
+color: #000 !important
+} */
+.navbar{
+justify-content: right;
+background-color: rgb(0, 0, 0, 0.1) !important;
+}
+.nav-link {
+color: inherit !important;
+}
+.nav-item {
+justify-content: right;
+padding: 6px 20px;
+color: white;
+float: right;
+}
+
+
